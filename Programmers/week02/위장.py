@@ -1,3 +1,8 @@
+from itertools import combinations
+from functools import reduce
+def multiply(i):
+    return reduce(lambda x, y: x * y, i)
+
 def solution(clothes):
     answer = 1
     checked = []
@@ -11,6 +16,15 @@ def solution(clothes):
                     cnt += 1
             li.append(cnt)
             checked.append(clothes[i][1])
+
+    # for i in range(1, len(li)+1):
+    #     for j in list(combinations(li, i)):
+    #         if len(j) == 1:
+    #             candidates.append(j[0])
+    #         else:
+    #             candidates.append(multiply(j))
+    #     answer += sum(candidates)
+    #     candidates.clear()
 
     for i in li:
         answer *= i+1
