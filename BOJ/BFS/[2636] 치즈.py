@@ -66,9 +66,7 @@ def solution(board):
 
 m, n = map(int, input().split())
 dx, dy = [1, -1, 0, 0], [0, 0, 1, -1]
-board = []
-change = []
-cheese = []
+board, change, cheese = [], [], []
 cnt = 0
 chk = False
 hole = deque()
