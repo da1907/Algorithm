@@ -14,6 +14,7 @@ def solution(bridge_length, weight, truck_weights):
 
     return answer
 
+
 bridge_length = int(input())
 weight = int(input())
 truck_weights = list(map(int, input().strip().split()))
