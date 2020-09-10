@@ -22,12 +22,12 @@ dx, dy = [1, -1, 0, 0], [0, 0, -1, 1]
 for i in range(r):
     board.append(list(input().strip()))
 
-answer = solution(board)
+result = solution(board)
 if solution(board):
-    print(answer)
+    print(result)
     for i in range(r):
         for j in range(c):
             print(board[i][j], end='')
         print()
 else:
-    print(answer)
+    print(result)
