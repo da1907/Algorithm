@@ -1,2 +1,21 @@
 # Project exclude paths
 /venv/
+/bin/
+.settings/
+.project
+.classpath
+*.bin
+.metadata
+bin/
+tmp/
+*.tmp
+
+*.bak
+
+*.swp
+
+*~.nib
+
+local.properties
+.loadpath
+.recommenders
